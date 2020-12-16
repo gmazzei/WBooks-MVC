@@ -19,7 +19,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        
+        // Test book
+        let defaultBook = Book(name: "The Hobbit", author: "J.R.R Tolkien",
+                                      cover: "https://i.harperapps.com/hcanz/covers/9780008108281/x293.jpg")
+        
+        window?.rootViewController = BookController(book: defaultBook, bookService: BookAPIService())
         window?.makeKeyAndVisible()
     }
 

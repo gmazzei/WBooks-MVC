@@ -7,8 +7,10 @@
 
 import Foundation
 
+/// Representation of a book to be used in the book controller.
 struct Book {
     
     let name: String
     let author: String
+    let cover: String
 }
