@@ -36,8 +36,8 @@ final class BookController: UIViewController, BookServiceDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("L - CALLING")
         bookService.loadCover(path: book.cover)
+        bookView.setBook(book)
     }
 
     // MARK: - BookServiceDelegate
