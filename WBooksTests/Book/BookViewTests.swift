@@ -19,8 +19,19 @@ final class BookViewTests: FBSnapshotTestCase {
         self.recordMode = false
     }
     
+    func testEmptyView() {
+        // Create a view.
+        let view = BookView()
+        
+        // Always add a frame to the view.
+        view.frame = CGRect(x: 0, y: 0, width: 320, height: 480)
+        
+        // Verify the view.
+        FBSnapshotVerifyView(view)
+    }
+    
     func testViewWithBook() {
-        // Create a view
+        // Create a view.
         let view = BookView()
         
         // Always add a frame to the view.

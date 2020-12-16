@@ -26,7 +26,7 @@ final class BookAPIServiceTests: XCTestCase, BookServiceDelegate {
         
         self.expectation = expectation
         
-        let service = BookServiceStub()
+        let service = BookAPIService()
         service.delegate = self
         service.loadCover(path: book.cover)
         
