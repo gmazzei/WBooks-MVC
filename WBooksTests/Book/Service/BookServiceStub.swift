@@ -11,9 +11,11 @@ import UIKit
 
 final class BookServiceStub: BookService {
     
+    private(set) var loadCoverCalled = false
     weak var delegate: BookServiceDelegate?
     
     func loadCover(path: String) {
+        loadCoverCalled = true
         delegate?.didLoadImage(UIImage())
     }
 }
