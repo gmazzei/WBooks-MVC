@@ -62,7 +62,6 @@ final class BookView: UIView {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = Constants.backgroundColor
         setupView()
     }
     
@@ -74,6 +73,8 @@ final class BookView: UIView {
     
     /// Sets up the view hierarchy and constraints.
     private func setupView() {
+        backgroundColor = Constants.backgroundColor
+        
         [titleLabel, authorLabel, imageView].forEach { view in
             addSubview(view)
         }
