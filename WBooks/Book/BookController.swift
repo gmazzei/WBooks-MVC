@@ -11,14 +11,16 @@ import Foundation
 final class BookController: UIViewController, BookServiceDelegate {
     
     private let book: Book
-    private var bookService: BookService 
-    
-    private lazy var bookView = BookView()
+    private var bookService: BookService
+    private var bookView: BookView
     
     // MARK: - Initializers
     
-    init(book: Book, bookService: BookService) {
+    init(book: Book,
+         bookView: BookView = SimpleBookView(),
+         bookService: BookService = BookAPIService()) {
         self.book = book
+        self.bookView = bookView
         self.bookService = bookService
         super.init(nibName: .none, bundle: .none)
         self.bookService.delegate = self

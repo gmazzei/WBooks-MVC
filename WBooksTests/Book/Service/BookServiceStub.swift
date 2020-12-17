@@ -5,7 +5,7 @@
 //  Created by Gabriel Mazzei on 15/12/2020.
 //
 
-import WBooks
+@testable import WBooks
 import Foundation
 import UIKit
 

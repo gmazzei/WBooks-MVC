@@ -1,5 +1,5 @@
 //
-//  BookViewTests.swift
+//  SimpleBookViewTests.swift
 //  WBooksTests
 //
 //  Created by Gabriel Mazzei on 16/12/2020.
@@ -10,7 +10,7 @@ import Foundation
 import XCTest
 import FBSnapshotTestCase
 
-final class BookViewTests: FBSnapshotTestCase {
+final class SimpleBookViewTests: FBSnapshotTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,7 +21,7 @@ final class BookViewTests: FBSnapshotTestCase {
     
     func testEmptyView() {
         // Create a view.
-        let view = BookView()
+        let view = SimpleBookView()
         
         // Always add a frame to the view.
         view.frame = CGRect(x: 0, y: 0, width: 320, height: 480)
@@ -32,7 +32,7 @@ final class BookViewTests: FBSnapshotTestCase {
     
     func testViewWithBook() {
         // Create a view.
-        let view = BookView()
+        let view = SimpleBookView()
         
         // Always add a frame to the view.
         view.frame = CGRect(x: 0, y: 0, width: 320, height: 480)

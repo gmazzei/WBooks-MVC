@@ -9,14 +9,14 @@ import UIKit
 import Foundation
 
 /// Delegate for book request events.
-public protocol BookServiceDelegate: class {
+protocol BookServiceDelegate: class {
     
     /// Called when an image request finishes loading.
     func didLoadImage(_ image: UIImage?)
 }
 
 /// Protocol for requesting book covers.
-public protocol BookService {
+protocol BookService {
     
     var delegate: BookServiceDelegate? { get set }
     

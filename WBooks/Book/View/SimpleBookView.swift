@@ -30,7 +30,7 @@ private struct Constants {
 }
 
 /// View for the book controller.
-final class BookView: UIView {
+final class SimpleBookView: UIView, BookView {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -99,17 +99,11 @@ final class BookView: UIView {
     
     // MARK: - Public interface
     
-    /// Updates the view for a specific book.
-    ///
-    /// - Parameter book: the new book.
     func setBook(_ book: Book) {
         titleLabel.text = book.name
         authorLabel.text = book.author
     }
     
-    /// Sets the image for the book.
-    ///
-    /// - Parameter image: the new image.
     func setBookCover(_ image: UIImage?) {
         imageView.image = image
     }
