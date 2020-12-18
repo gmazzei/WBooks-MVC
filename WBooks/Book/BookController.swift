@@ -48,4 +48,3 @@ final class BookController: UIViewController, BookServiceDelegate {
         bookView.setBookCover(image)
     }
 }
-

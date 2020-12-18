@@ -97,7 +97,7 @@ final class SimpleBookView: UIView, BookView {
         ])
     }
     
-    // MARK: - Public interface
+    // MARK: - BookView
     
     func setBook(_ book: Book) {
         titleLabel.text = book.name

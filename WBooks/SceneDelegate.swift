@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let defaultBook = Book(name: "The Hobbit", author: "J.R.R Tolkien",
                                       cover: "https://i.harperapps.com/hcanz/covers/9780008108281/x293.jpg")
         
-        window?.rootViewController = BookController(book: defaultBook)
+        window?.rootViewController = BookController(book: defaultBook, bookView: CustomBookView())
         window?.makeKeyAndVisible()
     }
 
