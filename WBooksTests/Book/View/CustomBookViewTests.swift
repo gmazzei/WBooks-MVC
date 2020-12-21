@@ -33,7 +33,9 @@ final class CustomBookViewTests: FBSnapshotTestCase {
     
     func testViewWithBook() {
         let view = newView()
-        view.setBook(Book(name: "The Hobbit", author: "J.R.R Tolkien", cover: "path"))
+        view.setTitle("Title")
+        view.setAuthor("Author")
+        view.setCover(UIImage())
 
         FBSnapshotVerifyView(view)
     }

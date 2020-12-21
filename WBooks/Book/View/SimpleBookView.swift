@@ -99,12 +99,15 @@ final class SimpleBookView: UIView, BookView {
     
     // MARK: - BookView
     
-    func setBook(_ book: Book) {
-        titleLabel.text = book.name
-        authorLabel.text = book.author
+    func setTitle(_ text: String) {
+        titleLabel.text = text
     }
     
-    func setBookCover(_ image: UIImage?) {
+    func setAuthor(_ text: String) {
+        authorLabel.text = text
+    }
+    
+    func setCover(_ image: UIImage?) {
         imageView.image = image
     }
 }

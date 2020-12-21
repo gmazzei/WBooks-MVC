@@ -12,13 +12,18 @@ protocol BookView: UIView {
     
     init()
     
-    /// Updates the view for a specific book.
+    /// Changes the text in the title label.
     ///
-    /// - Parameter book: the new book.
-    func setBook(_ book: Book)
+    /// - Parameter text: the new text.
+    func setTitle(_ text: String)
     
-    /// Sets the image for the book.
+    /// Changes the text in the author label.
+    ///
+    /// - Parameter text: the new text.
+    func setAuthor(_ text: String)
+    
+    /// Changes the image in the image view.
     ///
     /// - Parameter image: the new image.
-    func setBookCover(_ image: UIImage?)
+    func setCover(_ image: UIImage?)
 }
