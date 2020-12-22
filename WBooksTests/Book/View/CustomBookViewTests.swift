@@ -31,12 +31,27 @@ final class CustomBookViewTests: FBSnapshotTestCase {
         FBSnapshotVerifyView(view)
     }
     
+    func testViewWithTitleOnly() {
+        let view = newView()
+        view.setTitle("Title")
+
+        FBSnapshotVerifyView(view)
+    }
+    
+    func testViewWithAuthorOnly() {
+        let view = newView()
+        view.setAuthor("Author")
+        
+        FBSnapshotVerifyView(view)
+    }
+    
     func testViewWithBook() {
         let view = newView()
+        
         view.setTitle("Title")
         view.setAuthor("Author")
         view.setCover(UIImage())
-
+        
         FBSnapshotVerifyView(view)
     }
 }
