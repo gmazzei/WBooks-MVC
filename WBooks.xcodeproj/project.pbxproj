@@ -30,6 +30,7 @@
 		657DED7E2589168500CAF834 /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657DED7D2589168500CAF834 /* WBooksUITests.swift */; };
 		657DED902589199000CAF834 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657DED8F2589199000CAF834 /* Book.swift */; };
 		657DED9625891A9000CAF834 /* BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657DED9525891A9000CAF834 /* BookTests.swift */; };
+		65950F292593856A00CA7DF4 /* SetUpAndTearDownExampleTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65950F282593856A00CA7DF4 /* SetUpAndTearDownExampleTestCase.swift */; };
 		659B5BEB258BE13B00FAA5D1 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B5BEA258BE13B00FAA5D1 /* BookView.swift */; };
 		65AFE5D2258A84EB00D5D6E9 /* SimpleBookViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AFE5D1258A84EB00D5D6E9 /* SimpleBookViewTests.swift */; };
 		65B7F3EA2589308E0067ECFF /* SimpleBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7F3E92589308E0067ECFF /* SimpleBookView.swift */; };
@@ -90,6 +91,7 @@
 		657DED7F2589168500CAF834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		657DED8F2589199000CAF834 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		657DED9525891A9000CAF834 /* BookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTests.swift; sourceTree = "<group>"; };
+		65950F282593856A00CA7DF4 /* SetUpAndTearDownExampleTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpAndTearDownExampleTestCase.swift; sourceTree = "<group>"; };
 		659B5BEA258BE13B00FAA5D1 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		65AFE5D1258A84EB00D5D6E9 /* SimpleBookViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBookViewTests.swift; sourceTree = "<group>"; };
 		65B7F3E92589308E0067ECFF /* SimpleBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBookView.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				65C94295258A5E7E007BAF09 /* WebDataDownloadTests.swift */,
+				65950F282593856A00CA7DF4 /* SetUpAndTearDownExampleTestCase.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				65AFE5D2258A84EB00D5D6E9 /* SimpleBookViewTests.swift in Sources */,
 				6559E5AD258953B3000D2120 /* BookAPIServiceTests.swift in Sources */,
 				65B8AF1D25912F3500A5B338 /* SimpleBookViewModelTests.swift in Sources */,
+				65950F292593856A00CA7DF4 /* SetUpAndTearDownExampleTestCase.swift in Sources */,
 				65D9667A258C148800137E17 /* BookControllerIntegrationTests.swift in Sources */,
 				6507BC31258BDCF80006377A /* BookControllerTests.swift in Sources */,
 				6559E5B22589575D000D2120 /* BookServiceStub.swift in Sources */,
