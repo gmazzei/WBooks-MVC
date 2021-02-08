@@ -37,8 +37,10 @@ final class SimpleBookViewTests: FBSnapshotTestCase {
         // Always add a frame to the view.
         view.frame = CGRect(x: 0, y: 0, width: 320, height: 480)
         
-        // Fill the view with model.
-        view.setBook(Book(name: "The Hobbit", author: "J.R.R Tolkien", cover: "path"))
+        // Fill the view with data.
+        view.setTitle("Title")
+        view.setAuthor("Author")
+        view.setCover(UIImage())
         
         // Verify the view.
         FBSnapshotVerifyView(view)

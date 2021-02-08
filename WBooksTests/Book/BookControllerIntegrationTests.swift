@@ -10,7 +10,7 @@ import Foundation
 import XCTest
 import FBSnapshotTestCase
 
-/// Tests for the book controller and view.
+/// Tests for the book controller, view model and view.
 final class BookControllerIntegrationTests: FBSnapshotTestCase {
     
     override func setUp() {
@@ -21,8 +21,9 @@ final class BookControllerIntegrationTests: FBSnapshotTestCase {
     private func newController() -> BookController {
         let book = Book(name: "The Hobbit", author: "J.R.R Tolkien", cover: "path")
         let service = BookServiceStub()
+        let bookViewModel = SimpleBookViewModel(model: book, service: service)
         let bookView = SimpleBookView()
-        let controller = BookController(book: book, bookView: bookView, bookService: service)
+        let controller = BookController(viewModel: bookViewModel, view: bookView)
         controller.view.frame = CGRect(x: 0, y: 0, width: 320, height: 480)
         return controller
     }

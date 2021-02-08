@@ -8,22 +8,18 @@
 import UIKit
 import Foundation
 
-final class BookController: UIViewController, BookServiceDelegate {
+final class BookController: UIViewController, BookViewModelDelegate {
     
-    private let book: Book
-    private var bookService: BookService
+    private var bookViewModel: BookViewModel
     private var bookView: BookView
     
     // MARK: - Initializers
     
-    init(book: Book,
-         bookView: BookView = SimpleBookView(),
-         bookService: BookService = BookAPIService()) {
-        self.book = book
-        self.bookView = bookView
-        self.bookService = bookService
+    init(viewModel: BookViewModel, view: BookView) {
+        self.bookViewModel = viewModel
+        self.bookView = view
         super.init(nibName: .none, bundle: .none)
-        self.bookService.delegate = self
+        self.bookViewModel.delegate = self
     }
     
     required init?(coder: NSCoder) {
@@ -38,13 +34,13 @@ final class BookController: UIViewController, BookServiceDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bookService.loadCover(path: book.cover)
-        bookView.setBook(book)
+        bookViewModel.loadCover()
+        bookViewModel.configure(view: bookView)
     }
-
-    // MARK: - BookServiceDelegate
+    
+    // MARK: - BookViewModelDelegate
     
     func didLoadImage(_ image: UIImage?) {
-        bookView.setBookCover(image)
+        bookViewModel.configure(image: image, for: bookView)
     }
 }

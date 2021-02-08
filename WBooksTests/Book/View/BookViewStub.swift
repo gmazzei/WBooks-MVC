@@ -11,14 +11,19 @@ import UIKit
 
 final class BookViewStub: UIView, BookView {
     
-    private(set) var setBookCalled = false
-    private(set) var setBookCoverCalled = false
+    private(set) var setTitleCalled = false
+    private(set) var setAuthorCalled = false
+    private(set) var setCoverCalled = false
     
-    func setBook(_ book: Book) {
-        setBookCalled = true
+    func setTitle(_ text: String) {
+        setTitleCalled = true
     }
     
-    func setBookCover(_ image: UIImage?) {
-        setBookCoverCalled = true
+    func setAuthor(_ text: String) {
+        setAuthorCalled = true
+    }
+    
+    func setCover(_ image: UIImage?) {
+        setCoverCalled = true
     }
 }

@@ -21,10 +21,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         // Test book
-        let defaultBook = Book(name: "The Hobbit", author: "J.R.R Tolkien",
-                                      cover: "https://i.harperapps.com/hcanz/covers/9780008108281/x293.jpg")
-        
-        window?.rootViewController = BookController(book: defaultBook, bookView: CustomBookView())
+        let book = Book(name: "The Hobbit", author: "J.R.R Tolkien",
+                        cover: "https://i.harperapps.com/hcanz/covers/9780008108281/x293.jpg")
+        let bookViewModel = SimpleBookViewModel(model: book, service: BookAPIService())
+        let bookView = CustomBookView()
+        window?.rootViewController = BookController(viewModel: bookViewModel, view: bookView)
         window?.makeKeyAndVisible()
     }
 
