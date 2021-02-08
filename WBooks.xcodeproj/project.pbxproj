@@ -13,6 +13,8 @@
 		652280EE258BE51700B97637 /* BookViewStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652280ED258BE51700B97637 /* BookViewStub.swift */; };
 		65376A9925910C03006E4D35 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65376A9825910C03006E4D35 /* BookViewModel.swift */; };
 		65376AA125910C2E006E4D35 /* SimpleBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65376AA025910C2E006E4D35 /* SimpleBookViewModel.swift */; };
+		654B5B6C25D1EE8900A95898 /* PerformanceExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B5B6B25D1EE8900A95898 /* PerformanceExampleTests.swift */; };
+		654B5B7125D1F47D00A95898 /* NumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B5B7025D1F47D00A95898 /* NumberGenerator.swift */; };
 		654E3566258D048200E35E62 /* CustomBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E3565258D048200E35E62 /* CustomBookView.swift */; };
 		654E356B258D04A600E35E62 /* CustomBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 654E356A258D04A600E35E62 /* CustomBookView.xib */; };
 		654E3571258D089700E35E62 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E3570258D089700E35E62 /* NibView.swift */; };
@@ -68,6 +70,8 @@
 		652280ED258BE51700B97637 /* BookViewStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewStub.swift; sourceTree = "<group>"; };
 		65376A9825910C03006E4D35 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 		65376AA025910C2E006E4D35 /* SimpleBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBookViewModel.swift; sourceTree = "<group>"; };
+		654B5B6B25D1EE8900A95898 /* PerformanceExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceExampleTests.swift; sourceTree = "<group>"; };
+		654B5B7025D1F47D00A95898 /* NumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGenerator.swift; sourceTree = "<group>"; };
 		654E3565258D048200E35E62 /* CustomBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBookView.swift; sourceTree = "<group>"; };
 		654E356A258D04A600E35E62 /* CustomBookView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomBookView.xib; sourceTree = "<group>"; };
 		654E3570258D089700E35E62 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
@@ -154,6 +158,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		654B5B7525D1F48400A95898 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				654B5B7025D1F47D00A95898 /* NumberGenerator.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		654E356F258D088000E35E62 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +202,7 @@
 			children = (
 				657DED8E2589197900CAF834 /* Book */,
 				654E356F258D088000E35E62 /* Shared */,
+				654B5B7525D1F48400A95898 /* Example */,
 				657DED5B2589168400CAF834 /* AppDelegate.swift */,
 				657DED5D2589168400CAF834 /* SceneDelegate.swift */,
 				657DED642589168500CAF834 /* Assets.xcassets */,
@@ -268,6 +281,7 @@
 			children = (
 				65C94295258A5E7E007BAF09 /* WebDataDownloadTests.swift */,
 				65950F282593856A00CA7DF4 /* SetUpAndTearDownExampleTestCase.swift */,
+				654B5B6B25D1EE8900A95898 /* PerformanceExampleTests.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -550,6 +564,7 @@
 				657DED5C2589168400CAF834 /* AppDelegate.swift in Sources */,
 				654E3566258D048200E35E62 /* CustomBookView.swift in Sources */,
 				657DED5E2589168400CAF834 /* SceneDelegate.swift in Sources */,
+				654B5B7125D1F47D00A95898 /* NumberGenerator.swift in Sources */,
 				65B7F3EA2589308E0067ECFF /* SimpleBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +582,7 @@
 				6559E5AD258953B3000D2120 /* BookAPIServiceTests.swift in Sources */,
 				65B8AF1D25912F3500A5B338 /* SimpleBookViewModelTests.swift in Sources */,
 				65950F292593856A00CA7DF4 /* SetUpAndTearDownExampleTestCase.swift in Sources */,
+				654B5B6C25D1EE8900A95898 /* PerformanceExampleTests.swift in Sources */,
 				65D9667A258C148800137E17 /* BookControllerIntegrationTests.swift in Sources */,
 				6507BC31258BDCF80006377A /* BookControllerTests.swift in Sources */,
 				6559E5B22589575D000D2120 /* BookServiceStub.swift in Sources */,
